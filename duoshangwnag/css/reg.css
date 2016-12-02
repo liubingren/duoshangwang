@@ -1,0 +1,39 @@
+ /*默认样式-------------------------*/
+		    body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+			dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+			pre, /* text formatting elements 文本格式元素 */
+			form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+			th, td /* table elements 表格元素 */ {
+			    margin: 0;
+			    padding: 0;
+			}
+			ul li{list-style: none;}
+			a{text-decoration: none;}
+			
+/*头部*/
+     
+.top_wrap{background:#f4f2f5;width: 100%;}
+.top_wrap .top{background:url(../img/head_img/index_ico.png) no-repeat left 12px;overflow:hidden;width: 1220px;height: 32px;margin:0 auto;padding-top: 8px;}
+.top_wrap .top span{margin-top:0;color:#5f5d60;font-size:12px;font-weight: 200;}
+.top_wrap .top span.first{margin-left: 30px;}
+.top_wrap .top span a{color:#5f5d60;}
+.top_wrap .top span a:hover{color: red;}
+.top_wrap .top .right{float: right;margin-top:0;}
+.top_wrap .top .right a{padding-left:13px;background:url(../img/head_img/phone.gif) no-repeat left top;display:inline-block;width:65px;height:28px;}
+.top_wrap .top .right .a1{padding-left:20px;background: none;background: url(../img/head_img/car_2.gif) no-repeat left top;}
+
+.logo,.login_box_wrap{width: 1220px;margin: 0 auto;}
+.logo img{margin: 62px 0 30px 62px;}
+.reg .reg_step{border-bottom:1px solid #ccc;text-align:center;width: 1220px;height: 32px;line-height:32px;margin:0 auto;}
+.reg .reg_info{height: 372px;width: 1220px;}
+.reg .reg_info form{position:relative;width: 600px;height: 336px;margin: 40px auto 0 500px;}
+.reg .reg_info form img{position:absolute;left:347;top:120px;}
+.phone_email,.password{width: 258px;height: 32px;background:#fcfebf;border: 1px solid #ccc;}
+.reg .reg_info form .password{margin-top: 23px;}
+.reg .reg_info form .validatecode{margin-top: 23px;width: 118px;height: 33px;background: #ffe6e9;border: 1px solid #ccc;}
+.reg .reg_info form .getvalidate{margin-left:6px;width: 90px;height: 33px;border: 1px solid #ccc;}
+.reg .reg_info form .textvalidatecode{margin-top: 23px;width: 118px;height: 33px;}
+.reg .reg_info form .btn {width:109px;height: 37px;margin-left:15px;border: 1px solid #ccc;background: none;}
+.reg .reg_info form .checkbox{margin-left: 92px;margin-top: 38px;}
+.reg .reg_info form .submit{width: 300px;height: 34px;background: #c40001;border-radius: 1px;margin-top: 25px;margin-left: 50px;font-weight:bold;color: white;}
+.reg .reg_info form label{color: red;}

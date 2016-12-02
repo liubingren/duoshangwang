@@ -1,0 +1,52 @@
+/*默认样式-------------------------*/
+body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td
+ /* table elements 表格元素 */
+ {
+	margin: 0;
+	 padding: 0;
+}
+ul li{list-style: none;}
+a{text-decoration: none;}
+.logo,.login_box_wrap{width: 1220px;margin: 0 auto;}
+.logo img{margin: 62px 0 30px 62px;}
+.login_box{overflow:hidden;margin-left: 220px;margin-bottom:100px;width: 834px;height: 280px;}
+.login_box .picchange{float:left;width: 420px;height: 267px;margin-right: 76px;}
+.login_box .login{position:relative;float:left;width: 310px;height: 256px;border: 1px solid #ccc;}
+.login_box .login .username{padding-left:23px;border:0;border:1px solid #ccc;background:#fdffc6;margin-left: 18px;margin-top: 15px;width: 248px;height: 33px;}            
+.login_box .login .password{padding-left:23px;border:0;border:1px solid #ccc;background:#fdffc6;;margin-left: 18px;width:248px;height: 33px;margin-top: 25px;}            
+.login_box .login .img1{position: absolute;left:22px;top:22px;}
+.login_box .login .img2{position: absolute;left:22px;top:85px;}
+.login_box .login .box{color:#777578;overflow:hidden;margin-left: 18px;margin-top: 28px;}
+.login_box .login .box .checkbox_left{float: left;}
+.login_box .login .box .checkbox_right{float: right;}
+.login_box .login .box .checkbox_right a{color: blue;margin-right: 5px;}
+.login_box .login .box .checkbox_right a:hover{color: red;}
+.login_box .login .submit{margin-left:18px;width: 272px;height: 29px;background: #b30305;margin-top: 7px;border: 1px solid #6a1616;border-radius: 1px;}
+.login_box .login .reg{margin-left: 236px;margin-top: 16px;}
+.login_box .login .reg a{color: blue;}
+.login_box .login .reg a:hover{color: red;}
+//自动轮播图
+#main {
+	width: 420px;
+	height: 267px;
+	position: relative;
+	/*margin: 50px auto;*/
+}
+
+#main .pic {
+	width: 420px;
+	height: 267px;
+	
+	overflow: hidden;
+}
+#main .pic ul li {
+	width: 420px;
+	height: 267px;
+	position: relative;
+	
+}
+			
