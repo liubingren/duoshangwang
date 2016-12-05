@@ -1,0 +1,124 @@
+
+/*默认样式-------------------------*/
+		    body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+			dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+			pre, /* text formatting elements 文本格式元素 */
+			form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+			th, td /* table elements 表格元素 */ {
+			    margin: 0;
+			    padding: 0;
+			}
+			ul li{list-style: none;}
+			a{text-decoration: none;color: #7d7371;font-size: 12px;}
+			a:hover{color: red;}
+.about{width: 1220px;margin: 0 auto;height: 760px;overflow: hidden;}
+.about .about_left{border:1px solid #CCCCCC;box-shadow:1px 1px 10px #CCCCCC;height: 760px;width: 446px;float: left;}
+.about .about_left .top{height: 510px;}
+.bigPic img{width:428px;height: 425px;margin-left:5px;}
+#smallPic li{margin-left:5px;display:inline-block;border:1px solid transparent;margin-top:8px;}
+#smallPic li.active{border-color:#f60;}
+
+.about .about_left .top #smallPic ul{overflow: hidden;}
+.about .about_left .top #smallPic li{float:left;width: 64px;height: 64px;}
+.about .about_left .top #smallPic li img{width: 64px;height: 64px;}
+.about .about_left .bottom{height: 53px;margin: 0 auto;}
+/*.about .about_left .bottom span:hover{position:absolute;height:17px;background: url(../img/details_img/QQ20161204194246.png) no-repeat 0 -328px;}*/
+.about .about_left .bottom span{position: relative;}
+.about .about_left .bottom img.img1{position:absolute;display: none;left: 0;top:-328px;z-index: 1;}
+.about .about_left .bottom span:hover .img1{display: block;}
+.about .about_center{position: relative;border-left:none;border:1px solid #CCCCCC;height: 760px;width: 542px;float: left;box-shadow:0 0 10px #CCCCCC;}
+.about .about_center .center{overflow: hidden;border-bottom:1px dashed #CCCCCC;}
+.about .about_center .center .img0{margin-left: 16px;}
+.about .about_center .center .img1{position:absolute;margin-left: 16px;display: none;left: 0;top: 290px;}
+.about .about_center .center:hover .img1{display:block; }
+.about .about_center  .center a{margin-left:200px;text-decoration: underline;color: blue;}
+.about .about_center  .center a:hover{color: red;}
+.about .about_center .bottom{font-size: 12px;margin-top: 8px;}
+.about .about_center .bottom input{margin-left: 12px;background: white;border: 1px solid red;}
+.about .about_center .bottom .select{margin-top:3px;margin-left: 15px;width: 488px;height: 143px;overflow: scroll;}
+.about .about_center .select li{line-height:36px;height: 36px;border-bottom: 1px dashed #CCCCCC;}
+.about .about_center .select h3{display: inline;}
+.about .about_center .select input{width: 30px;height: 30px;background: #CCCCCC;border: none;}
+.about .about_center .select input.text{width: 44px;height: 30px;}
+.about .about_center .bottom span{display: inline-block;margin-left: 12px;}
+
+.about .about_center .bottom .showselect{font-size: 12px;width: 540px;height: 35px;line-height: 35px;background: #CCCCCC;border: 1px solid gray;}
+.about .about_center .bottom .showselect i{font-size: 16px;}
+.about .about_center .bottom .total{margin-top:8px;color: red;}
+.about .about_center .bottom .total a{text-decoration: underline;color: blue;}
+.about .about_center .bottom .total{overflow: hidden;}
+.about .about_center .bottom .total .btn{margin-top: 8px;}
+.about .about_center .bottom .check{margin-left:12px;float:left;width: 180px;height: 40px;line-height:40px;background: red;color: white;text-align: center;}
+.about .about_center .bottom .addto{margin-left:12px;float:left;width: 180px;height: 40px;line-height:40px;background: #ffe0da;color: red;text-align: center;border: 1px solid #ffa89a;}
+
+.about .about_right{height: 760px;width: 228px;float: left;}
+/*about .about_right .store{margin-left:12px;display:inline-block;width:174px;height:32px;background: #f4f4f4;border: 1px solid #CCCCCC;}*/
+.about .about_right input{width: 45px;height: 23px;margin-top: 10px;}
+.about .about_right .key{width: 118px;height: 22px;}
+.about .about_right .search{width: 70px;height: 27px;background: #CCCCCC;}
+
+.details{overflow:hidden;width: 1220px;height: 2120px;margin: 0 auto;font-size: 12px;color: dimgray;}
+.details .left{width: 227px;float: left;}
+.details .right{position:relative;width: 990px;float: left;height: 2120px;}
+.details .right ul{position:absolute;left:0;top:45px;overflow: hidden;width: 1220px;height: 245px;}
+.details .right a{display:inline-block;background: red;width: 60px;height: 22px;line-height: 22px;color: white;text-align: center;}
+.details .right ul li{float: left;width:170px;margin-right:32px;}
+.details .right ul li img{width: 170px;height: 170px;}
+.details .right ul li .first{display: none;}
+.details .right .arr-left{position: absolute;left: 0;top:125px;z-index: 1;}
+.details .right .arr-right{position: absolute;left: 936px;top: 125px;z-index: 1;}
+
+.details .right .tab_btn{width: 990px;height: 27px;color:white;position:absolute;left:0;top:295px;z-index: 2;}
+.details .right .tab_btn span{background:red;display: inline-block;height: 27px;line-height: 27px;width: 120px;text-align: center;border-right: 1px solid gray;}
+
+.details .right .tab{width: 990px;position: absolute;left: 0;top: 350px;}
+.details .right .tab div{position: absolute;top: 0;left:0;width: 990px;height: 1820px;}
+.details .right .tab .div3{}
+.details .right .tab .div3 ul{width: 990px;height: 1820px;}
+.details .right .tab .div3 ul li{width: 990px;height: 34px;line-height:34px;border-bottom: 1px solid #CCCCCC;}
+.details .right .tab .div3 span{display: inline-block;float: right;}
+
+.comment{position:absolute;left:288px;top:3058px;width: 990px;height:300px;}
+.comment .textarea{width: 800px;height: 200px;}
+.comment input{margin: 0 auto;}
+
+.loadfoot{position:absolute;top:3360px;left: 227px;}
+
+<meta charset="UTF-8">
+    <title>放大镜</title>
+    <style>
+	ul{padding:0;margin:0;list-style: none;}
+	a{color:#333;text-decoration: none;}
+	a:hover{text-decoration: underline;}
+	/*.bigPic img{width:200px;}*/
+	/*=S zoom big pic */
+.jqzoom{display:inline-block;position:relative;cursor:move;}
+div.zoomdiv{
+z-index                 :100;
+position                :absolute;
+top:0px;
+left:0px;
+width                   :200px;
+height                  :200px;
+background:#fff;
+border:1px solid #ccc;
+display:none;
+text-align:center;
+overflow:hidden;
+}
+div.jqZoomPup{
+z-index                 :10;
+visibility              :hidden;
+position                :absolute;
+top:0px;
+left:0px;
+width                   :50px;
+height                  :50px;
+border:1px solid #aaa;
+background:#fff url(zoom.gif) 50% top  no-repeat;
+opacity:.5;
+-moz-opacity:.5;
+-khtml-opacity:.5;
+filter:alpha(Opacity=50);
+
+}

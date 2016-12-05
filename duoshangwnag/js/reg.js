@@ -1,5 +1,6 @@
 $(function(){
 	//表单验证
+	console.log(document.getElementsByTagName("select")[0].value);
 	$('.form').validate({
 	  rules:{
         phone_email:{

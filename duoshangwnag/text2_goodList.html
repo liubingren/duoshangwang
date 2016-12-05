@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{margin: 0;padding: 0;}
+		a{text-decoration: none;}
+			.list{width: 100%;overflow: hidden;}
+			.list dl{width:23%;height: 400px ;overflow: hidden;float: left;margin: 0 10px 10px 0;}
+			.list dt{width: 100%;height: 300px;}
+			.list dd{position: relative;}
+			.list dt a{width: 100%;display: block;overflow: hidden;height: 300px;}
+			img{width: 100%;display: block;}
+			.content,.style{font-size: 14px;line-height: 20px;}
+			
+			.price{position: absolute;right: 20px;top:30px;color: red;font-size:20px;}
+			.tit{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;line-height: 30px;}
+			.tit a{color:blue}
+			span{padding: 10px; background-color: #ccc; margin-right: 5px;}
+		</style>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+		
+	  <div class="loadpic">
+		<div class="list">
+			<dl>
+				<dt><a href="goodsDetail.html"><img src="img/dingzhi.jpg" /></a></dt>
+				<dd>
+					<p class="tit"><a href="goodsDetail.html">2016秋新款 cachecache 欧美涂鸦翻领呢大衣 4816001136</a></p>
+					<p class="style">韩版</p>
+					<p class="content">玩味十足  显瘦百搭</p>
+					<p class="price">$399</p>
+				</dd>
+			</dl>
+		</div>
+	   <div id="pageing"></div>
+	  </div>
+	<script type="text/javascript">
+		$(function(){
+			var page = function(_pageindex, _isgenerate){
+				$.get('goodList.txt', {'_': Math.random()}, function(response){
+					var obj = JSON.parse(response);
+					var pageCount = obj.totalCount % obj.pageSize > 0 ? parseInt(obj.totalCount / obj.pageSize) + 1 :  parseInt(obj.totalCount / obj.pageSize)
+					var pageFlag = '';
+					
+						$(".list").find("dl").remove();
+					for(var i=(_pageindex-1)*obj.pageSize;i<_pageindex*obj.pageSize;i++){
+						if(i==obj.totalCount){
+							return false;
+						}
+						var _data=obj.data[i];
+						console.log(_data);
+						$('.list').append("<dl><dt><a href='#'><img src="
+						+_data.img+" /></a></dt><dd><p class='tit'><a href='#'>"
+						+_data.title+"</a></p><p class='style'>"+_data.style+"</p><p class='content'>"
+						+_data.content+"</p><p class='price'>$"+_data.price+"</p></dd></dl>")
+					
+					}
+
+				
+				
+				
+				
+					if(!_isgenerate){
+						return false;
+					}
+//					翻页按钮
+					for(var i = 1; i <= pageCount; i++){
+						pageFlag += ('<span>' + i + '</span>');
+					}
+					$(pageFlag).appendTo('#pageing');
+					
+					
+				})
+			}
+			page(1, true);
+			$('#pageing').on('click', function(evt){
+				page($(evt.target).text());
+			})
+		})
+		
+			
+			
+		</script>
+	</body>
+</html>

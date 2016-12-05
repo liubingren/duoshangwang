@@ -8,7 +8,31 @@
 			    padding: 0;
 			}
 			ul li{list-style: none;}
-			a{text-decoration: none;}
+			a{text-decoration: none;color: #7d7371;font-size: 12px;}
 			a:hover{color: red;}
+.content-top{margin:10px auto;width:1220px;height: 30px;}			
+.content-top .number{color: red;font-weight: bold;}			
+.content-bottom{width: 1220px;height: 250px;background: #f8f6f9;border: 1px solid #ccc;margin: 0 auto;}
+.content-bottom .content-bottom-1{padding-top:12px;height: 28px;border-bottom: 1px solid #CCCCCC;}
+.content-bottom span{margin-left:10px;margin-right: 10px;}
+.content-bottom span.first{color: black;font-weight: bold;margin-right: 20px;}
+.content-bottom span.more{margin-left: 300px;float: right;}
+			
+.loadpic{width: 1220px;margin: 0 auto;}
+.loadpic .list{width: 100%;overflow: hidden;margin-bottom: 20px;}
+.loadpic .list dl{width:23%;height: 400px ;overflow: hidden;float: left;margin: 10px;border: 1px solid #ccc;}
+.loadpic .list dt{width: 100%;height: 300px;}
+.loadpic .list dd{position: relative;}
+.loadpic .list dt a{width: 100%;display: block;overflow: hidden;height: 300px;}
+.loadpic img{width: 100%;display: block;}
+.loadpic .content,.style{font-size: 14px;line-height: 20px;}
 
 
+.loadpic .price{margin-top:15px;position: absolute;right: 20px;top:30px;color: red;font-size:20px;}
+.loadpic .tit{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;line-height: 30px;}
+.loadpic .tit a{color:blue}
+.loadpic .btn{width: 200px;height: 20px;background: red;margin:2px auto;text-align: center;border: 1px solid #CCCCCC;border-radius:2px ;}
+.loadpic .btn a:hover{color: white;}
+#pageing{margin-top:10px;width: 1000px;margin: 0 auto;height: 36px;text-align: center;}
+#pageing span{border-radius:5px;padding: 10px; border:1px solid red;margin-left:10px;margin-top:10px;}
+#pageing .topage{width: 28px;}
