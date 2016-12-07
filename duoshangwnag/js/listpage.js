@@ -36,7 +36,7 @@ $(function(){
 						var _data=obj.data[i];
 						console.log(_data);
 						$('.list').append("<dl><dt><a href='#'><img src="
-						+_data.img+" /></a></dt><dd><p class='btn'><a href='javascript:(0)' class='look'>登录查看分销价</a></p><p class='tit'><a href='#' class='title'>"
+						+_data.img+" /></a></dt><dd><p class='btn'><a class='look'>登录查看分销价</a></p><p class='tit'><a href='#' class='title'>"
 						+_data.title+"</a></p><p class='style'>"+_data.style+"</p><p class='content'>"
 						+_data.content+"</p><p class='price'>$"+_data.price+"</p></dd></dl>")
 					    console.log($(".look"));

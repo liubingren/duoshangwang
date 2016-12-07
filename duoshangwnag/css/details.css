@@ -85,9 +85,9 @@
 
 .loadfoot{position:absolute;top:3360px;left: 227px;}
 
-<meta charset="UTF-8">
+/*<meta charset="UTF-8">
     <title>放大镜</title>
-    <style>
+    <style>*/
 	ul{padding:0;margin:0;list-style: none;}
 	a{color:#333;text-decoration: none;}
 	a:hover{text-decoration: underline;}
@@ -122,4 +122,4 @@ opacity:.5;
 -khtml-opacity:.5;
 filter:alpha(Opacity=50);
 
-}
+/*}*/
