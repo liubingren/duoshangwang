@@ -46,6 +46,18 @@
 		    .head_wrap .bottom span a.first{display:inline-block;width: 236px;height: 32px;line-height:32px;text-align:center;background: #aa1800;}
 		    .head_wrap .bottom span a.hot{display:inline-block;width: 80px;height: 32px;line-height: 32px;text-align: center;background:url(img/index_img/tuihota.png) no-repeat right top;}
 		</style>
+		<script src="js/base.js"></script>
+		<!--<script src="js/cookie2.js"></script>-->
+		<script type="text/javascript">
+		 window.onload=function(){
+		 	
+		 	var user=getCookie("username");
+	        console.log(user);
+	       document.getElementsByClassName("foruser")[0].innerHTML=user;
+//		   console.log(getCookie()[0].value);
+//		   document.getElementsByClassName("foruser")[0].innerHTML=getCookie()[0].value;
+		 }
+		</script>
 		
 	</head>
 	<body>
@@ -53,7 +65,7 @@
 			<div class="top_wrap">
 				<div class="top">
 				 <span class="first"><a href="#">多商网首页</a></span>&nbsp;
-				 <span>您好，欢迎来到多商网！</span>
+				 <span class="foruser">您好，欢迎来到多商网！</span>
 			     <span>[<a href="login.html">请登录</a>]</span>
 			     <span>[<a href="register.html">免费注册</a>]</span>
 				 <div class="right">

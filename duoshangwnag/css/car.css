@@ -1,0 +1,24 @@
+/*默认样式-------------------------*/
+		    body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+			dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+			pre, /* text formatting elements 文本格式元素 */
+			form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+			th, td /* table elements 表格元素 */ {
+			    margin: 0;
+			    padding: 0;
+			}
+			ul li{list-style: none;}
+			a{text-decoration: none;color: #7d7371;font-size: 12px;}
+			a:hover{color: red;}
+.title{width: 1220px;margin: 0 auto;}
+.table{width: 1220px;margin: 0 auto;}			
+.table th{text-align: center;background: #CCCCCC;border-top: 1px solid dimgray;}
+.table td{text-align: center;height: 99px;border-bottom: 1px solid #CCCCCC;}
+.table td.first{width: 420px;height: 99px;}
+.table td h3{display: inline-block;}
+.sub,.text,.plus{width: 30px;height: 30px;background: #CCCCCC;border: none;}
+input.text{width: 44px;height: 30px;}
+.totalprice{color: red;}
+.order{width: 1220px;margin: 0 auto;}
+.order p{font-size: 19px;height: 24px;text-align: right;}
+.order h3{margin-left:1078px;line-height:30px;text-align:center;width: 142px;height: 30px;background: orange;border-radius:2px;}

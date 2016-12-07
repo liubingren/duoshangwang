@@ -53,6 +53,21 @@ $(function(){
                 function reset(){
 					$pic.eq(lastIndex).find('img').removeAttr('style');//removeProp(attr)
 				}
-				
-				
-			});
+        //用户名和密码存入cookie
+        var button=document.getElementsByClassName("button")[0];
+            button.onclick=function(){
+//          delCookie()
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            
+            console.log(username);
+            var date1=new Date();
+			date1.setDate(date1.getDate()+10);
+			setCookie("username", username, date1);
+		    setCookie("password", password, date1);
+		    console.log("提交之后："+document.cookie);
+//		    var user=getCookie("username");
+//		    var pass=getCookie("password");
+		    window.location.href="index.html";
+            }
+});

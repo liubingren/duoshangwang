@@ -4,9 +4,11 @@
 		<meta charset="UTF-8">
 		<title>login</title>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="js/login.js"></script>
+		<script src="js/base.js"></script>
+		<!--<script src="js/cookie2.js"></script>-->
 		
 	</head>
 	<body>
@@ -32,9 +34,11 @@
 				</div>
 				
 				<div class="login">
-					<form action="" method="post">
-						<img src="img/login_img/login3.jpg" class="img1"/><input type="text" id=""  class="username" name="username" placeholder="username"/>
-						<img src="img/login_img/login4.jpg" class="img2"/><input type="password" id="" value="" class="password" name="password" placeholder="password"/><br />
+					
+						<img src="img/login_img/login3.jpg" class="img1"/>
+						<input type="text"  class="username" id="username" name="username" placeholder="username" />
+						<img src="img/login_img/login4.jpg" class="img2"/>
+						<input type="password"  id="password"  class="password" name="password" placeholder="password" /><br />
 						  <div class="box">
 							<div class="checkbox_left">
 								<input type="checkbox" id="" value="" /><span class="">下次自动登录</span>
@@ -43,16 +47,17 @@
 								<a href="#">忘记密码?</a>
 							</div>
 						    </div>
-						<input type="submit" value="登录" class="submit"/>
+						<input type="button" value="登录" class="button"/>
 						<div class="reg">
 							<a href="#">立即注册?</a>
 						</div>
-					</form>	
+					
 				</div>
 			</div>
 		</div>
 		<div class="loadfoot">
 			
 		</div>
+		
 	</body>
 </html>

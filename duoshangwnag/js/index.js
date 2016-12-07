@@ -1,8 +1,12 @@
 $(function(){
   //加载头部和底部
-  $(".loadhead").load("commonhead.html?="+Math.random());
+$(".loadhead").load("commonhead.html?="+Math.random());
 	$(".loadfoot").load("commonfoot.html?="+Math.random());
-   //nav左边动态效果
+	
+	
+  
+  
+  //nav左边动态效果
 $(".nav .left .list").mouseenter(function(){
 	$(this).css("width","240px").css("background","white");
 	$(this).find(".top").css("color","red");

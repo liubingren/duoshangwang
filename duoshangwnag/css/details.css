@@ -11,6 +11,7 @@
 			ul li{list-style: none;}
 			a{text-decoration: none;color: #7d7371;font-size: 12px;}
 			a:hover{color: red;}
+.title{text-align:center;display: inline-block;width: 600px;height: 20px;font-size: 16px;line-height: 20px;color: black;font-weight: bold;margin: 0 auto;}
 .about{width: 1220px;margin: 0 auto;height: 760px;overflow: hidden;}
 .about .about_left{border:1px solid #CCCCCC;box-shadow:1px 1px 10px #CCCCCC;height: 760px;width: 446px;float: left;}
 .about .about_left .top{height: 510px;}
@@ -77,8 +78,8 @@
 .details .right .tab .div3 ul{width: 990px;height: 1820px;}
 .details .right .tab .div3 ul li{width: 990px;height: 34px;line-height:34px;border-bottom: 1px solid #CCCCCC;}
 .details .right .tab .div3 span{display: inline-block;float: right;}
-
-.comment{position:absolute;left:288px;top:3058px;width: 990px;height:300px;}
+.details .right .tab .div3 ul h3{display: inline-block;font-size: 16px;font-weight: bold;}
+.comment{position:absolute;left:288px;top:3075px;width: 990px;height:300px;}
 .comment .textarea{width: 800px;height: 200px;}
 .comment input{margin: 0 auto;}
 

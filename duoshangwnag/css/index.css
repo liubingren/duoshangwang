@@ -10,6 +10,37 @@
 			ul li{list-style: none;}
 			a{text-decoration: none;}
 			a:hover{color: red;}
+			/*.head_wrap{height: 172px;}
+			.head_wrap .top_wrap{background:#f4f2f5;width: 100%;}
+			.head_wrap .top_wrap .top{background:url(img/head_img/index_ico.png) no-repeat left 12px;overflow:hidden;width: 1220px;height: 32px;margin:0 auto;padding-top: 8px;}
+			.head_wrap .top_wrap .top span{margin-top:0;color:#5f5d60;font-size:12px;font-weight: 200;}
+			.head_wrap .top_wrap .top span.first{margin-left: 30px;}
+			.head_wrap .top_wrap .top span a{color:#5f5d60;}
+			.head_wrap .top_wrap .top span a:hover{color: red;}
+			.head_wrap .top_wrap .top .right{float: right;margin-top:0;}
+			.head_wrap .top_wrap .top .right a{padding-left:13px;background:url(img/head_img/phone.gif) no-repeat left top;display:inline-block;width:65px;height:28px;}
+			.head_wrap .top_wrap .top .right .a1{padding-left:20px;background: none;background: url(img/head_img/car_2.gif) no-repeat left top;}
+			
+			.head_wrap .center{overflow:hidden;width: 1220px;height:96px;margin:0 auto;}
+			.head_wrap .center .left{margin-top:24px;float:left;}
+			.head_wrap .center .center{margin-left:54px;margin-top:24px;float:left;width: 677px;height:74px;}
+			.head_wrap .center .center .input{overflow:hidden;}
+			.head_wrap .center .center input{float:left;height:34px;width: 530px;border:3px solid #bb2a0f;}
+			.head_wrap .center .center img{float:left;margin-left: 2px;}
+			.head_wrap .center .center .word{margin-top: 7px;}
+			.head_wrap .center .center .word span{font-size: 12px;color:#5f5d60;}
+			.head_wrap .center .center .word .span1{font-weight: bold;}
+			.head_wrap .center .center .word .span2 a{color: red;}
+			.head_wrap .center .center .word span a{color:#5f5d60;}
+			.head_wrap .center .right{overflow:hidden;margin-top:24px;float:right;}
+			.head_wrap .center .right div{float: left;margin-right: 17px;}
+			
+			
+			.head_wrap .bottom{width: 1220px;height:32px;margin:0 auto;border-bottom: 2px solid #972620;}
+			.head_wrap .bottom span{display:inline-block;font-size: 14px;margin-right:30px;}
+		    .head_wrap .bottom span a.first{display:inline-block;width: 236px;height: 32px;line-height:32px;text-align:center;background: #aa1800;}
+		    .head_wrap .bottom span a.hot{display:inline-block;width: 80px;height: 32px;line-height: 32px;text-align: center;background:url(img/index_img/tuihota.png) no-repeat right top;}*/
+
 .nav,.floors,.news,.link{width: 1220px;margin: 0 auto;}
 .nav{height: 512px;overflow: hidden;}
 .nav .left{float:left;width: 240px;height: 512px;background: black;}

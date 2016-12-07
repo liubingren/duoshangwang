@@ -25,7 +25,7 @@ a{text-decoration: none;}
 .login_box .login .box .checkbox_right{float: right;}
 .login_box .login .box .checkbox_right a{color: blue;margin-right: 5px;}
 .login_box .login .box .checkbox_right a:hover{color: red;}
-.login_box .login .submit{margin-left:18px;width: 272px;height: 29px;background: #b30305;margin-top: 7px;border: 1px solid #6a1616;border-radius: 1px;}
+.login_box .login .button{margin-left:18px;width: 272px;height: 29px;background: #b30305;margin-top: 7px;border: 1px solid #6a1616;border-radius: 1px;}
 .login_box .login .reg{margin-left: 236px;margin-top: 16px;}
 .login_box .login .reg a{color: blue;}
 .login_box .login .reg a:hover{color: red;}
