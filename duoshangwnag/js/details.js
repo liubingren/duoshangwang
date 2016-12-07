@@ -202,7 +202,7 @@ $(function(){
         }
         total=sNum+mNum+lNum+xlNum;
     $(".showselect").html("<span>白色</span><span>("+total+")件</span><span>("+sNum+")S</span><span>("+mNum+")M</span><span>("+lNum+")L</span><span>("+xlNum+")XL</span>");
-        $(".showselect").html("<span>白色</span><span>("+total+")件</span><span>("+sNum+")S</span><span>("+mNum+")M</span><span>("+lNum+")L</span><span>("+xlNum+")XL</span>");
+    $(".showselect").html("<span>白色</span><span>("+total+")件</span><span>("+sNum+")S</span><span>("+mNum+")M</span><span>("+lNum+")L</span><span>("+xlNum+")XL</span>");
     $(".totalnumber").html(total);
     $(".totalprice").html(total*35)
     })
@@ -212,11 +212,15 @@ $(function(){
     	color=$(this).attr("value");
     	
     })
+    var title=getCookie("title");
+    console.log(title);
+    $(".title").html(title);
+    
     //注意点击事件后面的代码只在加载完毕后触发一次，点击触发事件后不会再执行
    // 也就是输出的值不会变化
   //点击加入购物车时候将最后的totalnumber和totalprice放入cookie
 $(".addto").click(function(){
-	    var title=document.getElementsByClassName("title")[0].innerHTML;
+//	    var title=document.getElementsByClassName("title")[0].innerHTML;
         var totalnumber=total;
         var totalprice=total*35;
         var singleprice=35;

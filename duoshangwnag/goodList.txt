@@ -11,7 +11,7 @@
       "title": "2016秋新款 cachecache 欧美涂鸦翻领呢大衣 4816001136",
        "content":" 玩味十足  显瘦百搭",
       "img": "img/picchange_img/dingzhi.jpg",
-      "price": "399",
+      "price": "35",
       "url": "goodsDetail.html"
     },
     {
@@ -20,7 +20,7 @@
       "title": "2016冬新款 cachecache 时尚可爱印花中长款针织衫 4525007480",
        "content":"买三送一",
       "img": "img/picchange_img/dingzhi.jpg",
-      "price": "998",
+      "price": "35",
       "url": "goodsDetail.html"
     },
     {

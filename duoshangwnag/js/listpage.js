@@ -7,6 +7,18 @@ $(function(){
 //		$('.slide_wrap').css("display","none");
 //		
 //	})
+
+//   $(".look").click(function(){
+//		  var title=$(this).parent().parent().find(".title").text();
+//		   var date=new Date();
+//		    console.log(title);	
+//		   date.setData(date.getDate()+10);
+//		   setCookie("title",title,date);
+//		     var title=getCookie("title");
+//          console.log(title);	
+//		   })
+//		   
+
 	var total;
 	//翻页按钮+加载图片
 	var page = function(_pageindex, _isgenerate){
@@ -24,9 +36,25 @@ $(function(){
 						var _data=obj.data[i];
 						console.log(_data);
 						$('.list').append("<dl><dt><a href='#'><img src="
-						+_data.img+" /></a></dt><dd><p class='btn'><a href='#'>登录查看分销价</a></p><p class='tit'><a href='#'>"
+						+_data.img+" /></a></dt><dd><p class='btn'><a href='javascript:(0)' class='look'>登录查看分销价</a></p><p class='tit'><a href='#' class='title'>"
 						+_data.title+"</a></p><p class='style'>"+_data.style+"</p><p class='content'>"
 						+_data.content+"</p><p class='price'>$"+_data.price+"</p></dd></dl>")
+					    console.log($(".look"));
+							//以下setcookie代码的成功进行需要在页面不跳转的情况下，a的href='javascript:(0)'，href为空还是刷新页面
+							$(".look").click(function(){
+						  var title=$(this).parent().parent().find(".title").text();
+						   console.log("ok");
+						   var date=new Date();
+						   date.setDate(date.getDate()+10);
+						   setCookie("title",title,date);
+						     var title=getCookie("title");
+				    console.log(title);	
+				           window.location.href="details.html";
+						   })          
+//                  $(".list").on("click",".look",function(){
+//                  	console.log("ok");
+//                  })
+					
 					
 					}
 					
@@ -63,6 +91,16 @@ $(function(){
 			
 				 
 			}
+//	        $(".look").click(function(){
+//		  var title=$(this).parent().parent().find(".title").text();
+//		   var date=new Date();
+//		    console.log(title);	
+//		   date.setDate(date.getDate()+10);
+//		   setCookie("title",title,date);
+//		     var title=getCookie("title");
+//          console.log(title);	
+//		   })
+		   
 			page(1, true);
 			var num=1;
 			$('#pageing').on('click', function(evt){
@@ -99,6 +137,15 @@ $(function(){
 				console.log(num);
 				document.getElementById("pageing").getElementsByTagName("span")[num-1].style.background="red";
 			})
-		   
+		   $(".look").click(function(){
+//		  var title=$(this).parent().parent().find(".title").text();
+		   console.log("ok");
+////		   var date=new Date();
+////		   date.setDate(date.getDate()+10);
+////		   setCookie("title",title,date);
+////		     var title=getCookie("title");
+////  console.log(title);	
+		   })
+//		   
 	       
 })
